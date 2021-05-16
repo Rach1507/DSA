@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import graph.dfs;
 public class dfs{
       static ArrayList<ArrayList<Integer>> adjList = new ArrayList<ArrayList<Integer>>();
  public dfs(int n){
@@ -14,7 +13,9 @@ public class dfs{
         if (!isVisited[curNode]){
             isVisited[curNode]= true;
             ArrayList<Integer> alist = adjList.get(curNode);
-            for (int i =0;i<alist.length;i++)
+
+            
+            for (int i =0;i<alist.size();i++)
                 if (!isVisited[i]) 
                     dfsearch(i, isVisited);
                 
