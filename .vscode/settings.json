@@ -1,8 +1,9 @@
 {
     "java.project.sourcePaths": [
         "DataStructures/strings",
+        "DataStructures/sorting",
         "DataStructures/linkedList",
         "DataStructures/array",
-        "DataStructures/sorting"
+        "DataStructures/tree"
     ]
 }

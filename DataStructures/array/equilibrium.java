@@ -1,15 +1,35 @@
 public class equilibrium {
-  public static int equilibriumPoint(long arr[], int n) {
+  // public static int equilibriumPoint(long arr[], int n) {
     
 
+  public static long equilibriumPoint(long a[], int n) {
+    if (n == 1)
+      return a[0];
 
-    return n;
-      
+    for (int i = 0; i < n - 1; i++) {
+      // long pivot = a[i];
+      long sum1 = sum(a, 0, i-1);
+      long sum2 = sum(a, i + 1, n - 1);
+System.out.println(sum1+" "+sum2);
+      if (sum1 == sum2)
+        return i;
+
+    }
+
+    return -1;
+
+  }
+
+  private static long sum(long[] ar, int i, int j) {
+    long sum = 0;
+    for (int k = i; k <= j; k++)
+      sum += ar[k];
+    return sum;
   }
 
    public static void main(String[] args) {
-            long []arr = {7, 29, 9, 10,42 ,10, 5 ,10, 8 ,37, 33 ,1 ,19 ,19, 2 ,35, 24, 37, 9, 11 ,20 ,12, 33 ,36 ,33, 30, 28 ,33, 26, 6, 32, 28, 5 ,4};
-            System.out.println(equilibriumPoint(arr, 34));
+            long []arr = {32, 41, 34 ,26, 34 ,30 ,10, 11, 23 ,20 ,10 ,12 ,25 ,5 ,7 ,41 ,7 ,43 ,25};
+            System.out.println(equilibriumPoint(arr, 19));
         }
 }
 

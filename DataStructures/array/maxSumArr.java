@@ -1,7 +1,7 @@
 public class maxSumArr {
 
     public int bruteForce(int[] arr) {
-        return
+        return 0;
 
     }
 

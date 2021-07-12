@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Random;
+
 class sumOfPAir{
 
 
@@ -53,4 +56,4 @@ class sumOfPAir{
     }
 
     }
-}
+

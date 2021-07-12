@@ -1,0 +1,266 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch smallestSubarr",
+            "request": "launch",
+            "mainClass": "smallestSubarr",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch wordBreak",
+            "request": "launch",
+            "mainClass": "wordBreak",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch postorder",
+            "request": "launch",
+            "mainClass": "postorder",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch BitArray",
+            "request": "launch",
+            "mainClass": "BitArray",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch allPermNums",
+            "request": "launch",
+            "mainClass": "allPermNums",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch allPerms",
+            "request": "launch",
+            "mainClass": "allPerms",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch alternateChars",
+            "request": "launch",
+            "mainClass": "alternateChars",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch anagram",
+            "request": "launch",
+            "mainClass": "anagram",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch arrayRev",
+            "request": "launch",
+            "mainClass": "arrayRev",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch boat2sum",
+            "request": "launch",
+            "mainClass": "boat2sum",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch buySellStock",
+            "request": "launch",
+            "mainClass": "buySellStock",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch countInver",
+            "request": "launch",
+            "mainClass": "countInver",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch duplicates",
+            "request": "launch",
+            "mainClass": "duplicates",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch equilibrium",
+            "request": "launch",
+            "mainClass": "equilibrium",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch gaurd",
+            "request": "launch",
+            "mainClass": "gaurd",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch goodPair",
+            "request": "launch",
+            "mainClass": "goodPair",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch insertion_sort",
+            "request": "launch",
+            "mainClass": "insertion_sort",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch kSum",
+            "request": "launch",
+            "mainClass": "kSum",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch longestPalin",
+            "request": "launch",
+            "mainClass": "longestPalin",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch majorityEle",
+            "request": "launch",
+            "mainClass": "majorityEle",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch merge",
+            "request": "launch",
+            "mainClass": "merge",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch mergeSort",
+            "request": "launch",
+            "mainClass": "mergeSort",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch quicksort",
+            "request": "launch",
+            "mainClass": "quicksort",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch ransomNote",
+            "request": "launch",
+            "mainClass": "ransomNote",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch rearrange",
+            "request": "launch",
+            "mainClass": "rearrange",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch revLine",
+            "request": "launch",
+            "mainClass": "revLine",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch romanToInt",
+            "request": "launch",
+            "mainClass": "romanToInt",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch rotateClockwise",
+            "request": "launch",
+            "mainClass": "rotateClockwise",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch selection_sort",
+            "request": "launch",
+            "mainClass": "selection_sort",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch smallestWindow",
+            "request": "launch",
+            "mainClass": "smallestWindow",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch sortAr",
+            "request": "launch",
+            "mainClass": "sortAr",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch sumOfPAir",
+            "request": "launch",
+            "mainClass": "sumOfPAir",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch threeSum",
+            "request": "launch",
+            "mainClass": "threeSum",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch twoSum",
+            "request": "launch",
+            "mainClass": "twoSum",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch urlify",
+            "request": "launch",
+            "mainClass": "urlify",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch validIp",
+            "request": "launch",
+            "mainClass": "validIp",
+            "projectName": "DSA_665d94fd"
+        }
+    ]
+}
