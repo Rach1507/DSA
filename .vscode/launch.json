@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch longestCharReplace",
+            "request": "launch",
+            "mainClass": "longestCharReplace",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch AllAnagrOfPinS",
+            "request": "launch",
+            "mainClass": "AllAnagrOfPinS",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch binStrings",
+            "request": "launch",
+            "mainClass": "binStrings",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch countWays",
+            "request": "launch",
+            "mainClass": "countWays",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Queue",
+            "request": "launch",
+            "mainClass": "Queue",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
             "name": "Launch smallestSubarr",
             "request": "launch",
             "mainClass": "smallestSubarr",

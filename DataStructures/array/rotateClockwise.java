@@ -12,7 +12,7 @@ public class rotateClockwise {
 
     public static void leftRotate(int[] arr, int n, int d) {
         
-        reverse(arr,0,d);
+        reverse(arr,0,d); //34512
         reverse(arr, d, n);
         reverse(arr, 0, n);
         
@@ -20,6 +20,17 @@ public class rotateClockwise {
 
     private static void reverse(int[] arr, int i, int d) {
 
+
+//         Given an array, rotate the array by one position in clock-wise direction.
+ 
+
+// Example 1:
+
+// Input:
+// N = 5
+// A[] = {1, 2, 3, 4, 5}
+// Output:
+// 5 1 2 3 4
         // int temp = arr[d-1];
         while(i<d)
 

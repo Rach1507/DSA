@@ -33,7 +33,7 @@ public class revLine {
     // approach 2 (no extra space)
 
     String st = "getting good at coding ";
-    String[] words = st.split("\\s");
+    String[] words = st.split(" ");
 
     words = RevString(words, words.length);
 
