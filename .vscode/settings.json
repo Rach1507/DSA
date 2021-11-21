@@ -4,7 +4,8 @@
         "DataStructures/strings",
         "DataStructures/sorting",
         "DataStructures/linkedList",
+        "DataStructures/core_ds",
         "DataStructures/array",
-        "DataStructures/core_ds"
+        "DataStructures/dp"
     ]
 }

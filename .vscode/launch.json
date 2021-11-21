@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch bestSum",
+            "request": "launch",
+            "mainClass": "bestSum",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch howSum",
+            "request": "launch",
+            "mainClass": "howSum",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
             "name": "Launch longestCharReplace",
             "request": "launch",
             "mainClass": "longestCharReplace",

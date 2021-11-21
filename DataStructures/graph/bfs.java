@@ -13,26 +13,38 @@ public class bfs {
         boolean vis[] = new boolean[V];
         Arrays.fill(vis, false);
 
+
+        // add the source to queue
+        
+
+        // loop
+            //poll
+            //print it 
+            //mark as visited
+            
+            // consider neighbours add them all to queue if not visited
+            
+        
+
+
         que.add(0);
-        vis[0] = true;
+       
      
 
         while (!que.isEmpty()) {
             int p = que.poll();
-
-       
             bfs.add(p);
+            vis[p]=true;
            
 
             ArrayList<Integer> neighbours = adj.get(p);
 
             for (Integer next : neighbours) {
                 if (!vis[next])
-                    if (!que.contains(next)) {
+                   {
 
                         que.add(next);
-                        vis[next] = true;
-
+                       
                     }
 
             }
