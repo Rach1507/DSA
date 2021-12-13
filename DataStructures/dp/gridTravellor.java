@@ -52,4 +52,29 @@ public class gridTravellor {
 
         return memo.get(key);
     }
+
+    public int uniquePathsOptimal(int m, int n) {
+
+
+         //m+n-2
+         //    C
+         //      m-1
+
+
+         //its a combinatrix problem
+
+        int N = m + n - 2;
+
+        int r = m - 1;
+
+        double c = 1;
+
+        for (int i = 1; i <= r; i++) {
+            c = c * (N - r + i) / i;
+
+        }
+
+        return (int) c;
+
+    }
 }

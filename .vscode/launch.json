@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch connectedComponents",
+            "request": "launch",
+            "mainClass": "connectedComponents",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
             "name": "Launch bestSum",
             "request": "launch",
             "mainClass": "bestSum",
