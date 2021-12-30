@@ -4,7 +4,30 @@ public class fib {
 
     static int memo[] = new int[31];
 
-    public int fibo(int n) {
+    public static int fibTabulation(int n) {
+
+        int table[] = new int[n + 2];
+
+        Arrays.fill(table, 0);
+
+        table[1] = 1;
+
+        for (int i = 0; i < n; i++) {
+
+            // pick the first one 
+            int ele = table[i];
+
+            // add them to next two numbers 
+            table[i + 1] += ele;
+            table[i + 2] += ele;
+        }
+        
+        return table[n];
+
+    
+    }
+
+    public static int fiboTabOptimization(int n) {
 
         if (n < 2)
             return n;
@@ -23,31 +46,50 @@ public class fib {
 
     }
 
-    public int fibTabulation(int n) {
+  
 
-        int table[] = new int[n + 1];
 
-        Arrays.fill(table, 0);
 
-        table[1] = 1;
 
-        for (int i = 0; i < table.length; i++) {
-            table[i + 1] += table[i];
-            table[i + 2] += table[i];
-        }
+    public  static int fib(int n) {
 
-        return table[n];
+        memo[0] = 0;
+        memo[1] = 1;
+
+
+        if (memo[n] == 0 && n >=2)
+            memo[n] = memo[n - 1] + memo[n - 2];
+             return memo[n];
 
     }
 
-    public int fib(int n) {
 
-        if (n < 2)
-            return n;
+
+
+
+
+    
+    public static int fib2(int n) {
+
+      if (n<=1) return n;
+
         if (memo[n] == 0)
-            memo[n] = fib(n - 1) + fib(n - 2);
+            memo[n] = fib2(n - 1) + fib2(n - 2);
 
         return memo[n];
+
+    }
+
+
+    public static void main(String[] args) {
+        System.out.println(fib2(8));
+        System.out.println(fib(8));
+
+        System.out.println(fibTabulation(8));
+
+        System.out.println(fiboTabOptimization(8));
+
+        System.out.println();
 
     }
 

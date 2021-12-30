@@ -38,7 +38,11 @@ public class gridTravellor {
 
     public int findPath(int m, int n, HashMap<String, Integer> memo) {
 
-        String key = m + "," + n;
+        // String key = m + "," + n;
+        String key = String.valueOf(m + "," + n);
+
+        if(memo.containsKey(key)) 
+            return memo.get(key);
 
         if (m == 0 || n == 0)
             return 0;
@@ -46,7 +50,7 @@ public class gridTravellor {
         if (m == 1 && n == 1)
             return 1;
 
-        if (!memo.containsKey(key))
+        // if (!memo.containsKey(key))
 
             memo.put(key, findPath(m - 1, n, memo) + findPath(m, n - 1, memo));
 
@@ -61,7 +65,7 @@ public class gridTravellor {
          //      m-1
 
 
-         //its a combinatrix problem
+        //its a combinatrix problem
 
         int N = m + n - 2;
 
@@ -70,11 +74,10 @@ public class gridTravellor {
         double c = 1;
 
         for (int i = 1; i <= r; i++) {
-            c = c * (N - r + i) / i;
-
+            c = c * ( N - r + i ) / i;
         }
 
-        return (int) c;
+        return (int)c;
 
     }
 }

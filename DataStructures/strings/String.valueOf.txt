@@ -1,0 +1,56 @@
+Differences between String.valueOf(Object) and Object.toString() are:
+
+1) If string is null,
+
+String.valueOf(Object) will return null, whereas Object::toString() will throw a null pointer exception.
+
+public static void main(String args[]){  
+    String str = null;
+
+    System.out.println(String.valueOf(str));  // it will print null        
+    System.out.println(str.toString()); // it will throw NullPointerException        
+}  
+2) Signature:
+
+valueOf() method of String class is static. whereas toString() method of String class is non static.
+
+The signature or syntax of string's valueOf() method is given below:
+
+public static String valueOf(boolean b)  
+public static String valueOf(char c)  
+public static String valueOf(char[] c)  
+public static String valueOf(int i)  
+public static String valueOf(long l)  
+public static String valueOf(float f)  
+public static String valueOf(double d)  
+public static String valueOf(Object o)
+The signature or syntax of string's toString() method is given below:
+
+public String toString()
+
+char[] data
+            = { 'G', 'E', 'E', 'K', 'S', ' ', 'F', 'O',
+                'R', ' ', 'G', 'E', 'E', 'K', 'S' };
+        String sample;
+ 
+        // Returns the string representation
+        // of a specific subarray of the chararray argument
+        sample = String.valueOf(data, 0, 15);
+
+static String valueOf(int num)
+static String valueOf(float num)
+static String valueOf(boolean sta)
+static String valueOf(double num)
+static String valueOf(char[] data, int offset, int count)
+static String valueOf(long num)
+static String valueOf(Object ob)
+static String valueOf(char chars[])
+Returns:  
+
+It returns string representation of given value
+valueOf(iNum); // Returns the string representation of int iNum.
+String.valueOf(sta); // Returns the string representation of the boolean argument.
+String.valueOf(fNum); // Returns the string representation of the float fnum.
+String.valueOf(data, 0, 15); // Returns the string representation of a specific subarray of the chararray argument.
+String.valueOf(data, 0, 5); // Returns the string of charArray 0 to 5
+String.valueOf(data, 7, 9); // Returns the string of charArray starting index 7 and total count from 7 is 9

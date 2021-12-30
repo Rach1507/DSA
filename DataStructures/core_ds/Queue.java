@@ -22,8 +22,11 @@ public class Queue {
 
       
         void enqueue(int item) {
-            if (isFull())
+            if (isFull()){
+                System.out.println( "queue FULL");
                 return;
+            }
+               
            rear = (rear + 1) % capacity;
            array[rear] = item;
             size = size + 1;

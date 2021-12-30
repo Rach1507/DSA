@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch fib",
+            "request": "launch",
+            "mainClass": "fib",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
             "name": "Launch connectedComponents",
             "request": "launch",
             "mainClass": "connectedComponents",
