@@ -6,6 +6,8 @@ public class randomizedQueue<T> implements Iterable<T> {
             return size() == 0;
         } // is the queue empty?
         public int size(){
+            int length=0;
+            //TODO
             return length;
         } // return the number of items on the queue
         public void enqueue(T item) {}// add the item

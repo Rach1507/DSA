@@ -87,19 +87,19 @@ public class Stack<T> implements Iterable<T>{
       }
 
       public int search(T elem) {
-        return list.lastIndexOf(elem);
+        return 0;
+        // return list.lastIndexOf(elem);
       }
 
       
       
       
-      @Override
-      public java.util.Iterator<T> iterator() {
-        return new stack_list.iterator();
+    //   @Override
+    //   public java.util.Iterator<T> iterator() {
+        // return new stack_list.iterator();
  
-      }
+    //   }
       
         }
       
-
-}
+    

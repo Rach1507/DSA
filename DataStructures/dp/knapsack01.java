@@ -4,29 +4,33 @@ public class knapsack01 {
         
         int max_val =Integer.MIN_VALUE;
 
+for (int k = 0; k < val.length; k++) {
+    
+    int window_size =k;
+    
 
         for (int i = 0; i < val.length; i++) {
             
-                int wgt = wt[i];
-                int profit =val[i];
-                for (int j = 0; j < val.length; j++) {
+                // int wgt = wt[i];
+                // int profit =val[i];
+                // for (int j = 0; j < val.length; j++) {
                     
-                    if ( j!=i && (wgt + wt[j]) <= W ){
-                        wgt += wt[j];
-                        profit += val[j];
-                    }
+                //     if ( j!=i && (wgt + wt[j]) <= W ){
+                //         wgt += wt[j];
+                //         profit += val[j];
+                //     }
                     
-                    if(wgt + wt[j] > W) 
-                    // else
-                    break;
+                //     if(wgt + wt[j] > W) 
+                //     // else
+                //     break;
 
-                    
-                }
+                //     max_val = Math.max(max_val, profit);
+                // }
 
-                max_val =Math.max(max_val, profit);
+           
 
         }
-
+    }
         return max_val;
     }
 
