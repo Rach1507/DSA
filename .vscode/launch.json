@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch max_depth",
+            "request": "launch",
+            "mainClass": "max_depth",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch levelOrder",
+            "request": "launch",
+            "mainClass": "levelOrder",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
+            "name": "Launch mergeSortPrac",
+            "request": "launch",
+            "mainClass": "mergeSortPrac",
+            "projectName": "DSA_665d94fd"
+        },
+        {
+            "type": "java",
             "name": "Launch knapsack01",
             "request": "launch",
             "mainClass": "knapsack01",

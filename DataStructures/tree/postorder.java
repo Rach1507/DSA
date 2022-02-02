@@ -1,17 +1,17 @@
 import java.util.*;
-class Node {
+class TreeNode {
     int data;
-    Node left, right;
+    TreeNode left, right;
 
     // Function to create a new binary tree node having a given key
-    public Node(int key) {
+    public TreeNode(int key) {
         data = key;
         left = right = null;
     }
 }
 public class postorder {
-    private static void postorderIterative(Node root) {
-        Stack<Node> stack = new Stack<>();
+    private static void postorderIterative(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<>();
         while (true) {
             while (root != null) {
                 stack.push(root);
@@ -35,9 +35,9 @@ public class postorder {
         }
     }
     
-    public static void postorderIterate(Node root) {
+    public static void postorderIterate(TreeNode root) {
         // create an empty stack and push the root node
-        Stack<Node> stack = new Stack();
+        Stack<TreeNode> stack = new Stack();
         stack.push(root);
 
         // create another stack to store postorder traversal
@@ -46,7 +46,7 @@ public class postorder {
         // loop till stack is empty
         while (!stack.empty()) {
             // pop a node from the stack and push the data into the output stack
-            Node curr = stack.pop();
+            TreeNode curr = stack.pop();
             out.push(curr.data);
 
             // push the left and right child of the popped node into the stack
@@ -65,15 +65,15 @@ public class postorder {
         }
     }
 
-    public static void postordertrav(Node root) {
+    public static void postordertrav(TreeNode root) {
         if(root == null)
         return ;
 
 
         // create an empty stack and push the root node
-        Stack<Node> stack = new Stack();
+        Stack<TreeNode> stack = new Stack();
         
-        Node curr =root;
+        TreeNode curr =root;
         // create another stack to store postorder traversal
         // Stack<Integer> out = new Stack();
 
@@ -137,14 +137,14 @@ if(curr != null)
          *  7 8
          */
 
-        Node root = new Node(1);
-        root.left = new Node(2);
-        root.right = new Node(3);
-        root.left.left = new Node(4);
-        root.right.left = new Node(5);
-        root.right.right = new Node(6);
-        root.right.left.left = new Node(7);
-        root.right.left.right = new Node(8);
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.left.left = new TreeNode(4);
+        root.right.left = new TreeNode(5);
+        root.right.right = new TreeNode(6);
+        root.right.left.left = new TreeNode(7);
+        root.right.left.right = new TreeNode(8);
 
         postorderIterative(root);
         System.out.println();
