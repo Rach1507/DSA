@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch revLine",
+            "request": "launch",
+            "mainClass": "revLine",
+            "projectName": "DSA_2d06c78e"
+        },
+        {
+            "type": "java",
             "name": "Launch mergeSortedLists",
             "request": "launch",
             "mainClass": "mergeSortedLists",
