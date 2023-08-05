@@ -1,7 +1,7 @@
 
 | 	Topic	 | 	Ref Link 	 | 	Date	 |  	rev 
 | 	:-----:	 | 	:-----:	 | 	:-----:	  | 	:-----:	 | 
-| 	Array/TreeMap - Top K freq elements	| 	[link](https://leetcode.com/problems/top-k-frequent-elements/)	| 	Auh 5/6	 |  |
+| 	Array/TreeMap - Top K freq elements	| 	[link](https://leetcode.com/problems/top-k-frequent-elements/)	| 	Aug 5/6	 |  |
 | 		| 		| 		 |  		 |
 | 		| 		| 		 |  		 |
 | 		| 		| 		 |   		 |
