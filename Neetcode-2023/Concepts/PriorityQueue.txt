@@ -1,0 +1,28 @@
+
+
+Queue with priority 
+
+IF no comparator given , usual FIFO 
+
+poll() - removes most prioritised from queue 
+peek() - peeks into most prioritised in queue 
+
+if comparator used , 
+
+(o1 > o2 ) ? 1: -1   ---- ascending ( greater element with more priority )
+(o1 < o2 ) ? 1: -1   ---- descending 
+
+
+Using Java 8 :
+Using Method reference
+
+PriorityQueue<String> pq=
+                new PriorityQueue<String>(5, Comparator.comparing(String::length));
+
+To reverse the order (to change it to max-priority queue) simply change the order in inline comparator or use reversed as:
+
+PriorityQueue<String> pq = new PriorityQueue<String>(5, 
+                             Comparator.comparing(String::length).reversed());
+
+
+Ref :https://www.freecodecamp.org/news/priority-queue-implementation-in-java/

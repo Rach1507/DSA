@@ -7,6 +7,15 @@
 | 		| 		| 		 |   		 |
 | 		| 		| 		 |  		 |
 
+
+| 	Topic	 | 	Description	 | 	Ref Link(s) 	 | 	Link	 | Last updated  	   
+| 	:-----:	| 	:-----:	 | 	:-----:	 | 	:-----:	  | 	:-----:	 | 
+| 	PQ | | 	[link]()	| [read]() | 	Aug 6	 
+| 	HashMap	| 		[link]()	| [read]()  |  		 |
+| 		| 		| 		 |  		 |
+| 		| 		| 		 |   		 |
+| 		| 		| 		 |  		 |
+
 Ref leetcode lists
 
 -Neetcode - https://neetcode.io/roadmap
