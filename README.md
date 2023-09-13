@@ -5,8 +5,8 @@
 | 	2sum	| 		| 		 |  		 |
 | 	3sum	| 		| 		 |  		 |
 | 	Inorder traversal	| 		| 		 |   		 |
-| 		| 		| 		 |  		 |
-
+| 	2sumsorted	| 		| 		 |  		 |
+| 	2Dsearch	| 		| 		 |  		 |
 
 | 	Topic	 | 	Description	 | 	Ref Link(s) 	 | 	Link	 | Last updated  	   
 | 	:-----:	| 	:-----:	 | 	:-----:	 | 	:-----:	  | 	:-----:	 | 
