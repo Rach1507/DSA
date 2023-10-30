@@ -1,4 +1,6 @@
-public class Solution {
+import java.util.Stack;
+
+public class baseballGame {
     public int calPoints(String[] operations) {
 
         int sum = 0 ; 
@@ -54,4 +56,4 @@ public class Solution {
                 //     recs.push();
                 //     sum += score1 + score2 {
     
-}
+

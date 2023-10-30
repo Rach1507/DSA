@@ -1,8 +1,8 @@
-package Neetcode-2023.trees;
+
 
 public class preorder {
     
-    static ArrayList<Integer> preorder(Node root)
+    static ArrayList<Integer> preorderTrav(Node root)
     {
         ArrayList<Integer> preorderList = new ArrayList<>();
         recursivePreOrder(root , preorderList);

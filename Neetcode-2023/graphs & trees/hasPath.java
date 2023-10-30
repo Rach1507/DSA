@@ -1,4 +1,4 @@
-package Neetcode-2023.graphs & trees;
+
 
 public class hasPath {
 
@@ -43,4 +43,4 @@ public class hasPath {
     // this function behaves as `main()` for the 'run' command
     // you may sandbox in this function , but should not remove it
   }
-}}
+}

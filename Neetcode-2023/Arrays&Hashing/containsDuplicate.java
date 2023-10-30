@@ -20,6 +20,8 @@
 
 //Rev - 12 Aug 
 
+import java.util.HashMap;
+
 class containsDuplicate {
     public boolean containsDuplicates(int[] nums) {
         

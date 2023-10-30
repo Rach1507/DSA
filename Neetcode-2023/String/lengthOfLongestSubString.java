@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class lengthOfLongestSubString {
 
     public int lengthOfLongestSubstring(String s) {
