@@ -1,4 +1,4 @@
-import java.util.*;
+Bimport java.util.*;
 
 public class allPermNums {
     public static List<List<Integer>> permute(int[] nums) {
