@@ -7,6 +7,9 @@ Visualise the problem in graph -
     faith
 
     Generalise
+
+    visualise the tree
+    at every node , i should somehow at every step , reduce the input to the node eventually arive at base case 
     Base case - leaves of the nod
 
 2.Make it effecient

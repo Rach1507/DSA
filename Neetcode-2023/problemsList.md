@@ -1,15 +1,27 @@
-| Problem | Description | Ref Link | Soln Link | Date | Approach
-| Top K freq elements | get 2 most freq -[1,1,1,2,3,3] = > [1,3] | [link](https://leetcode.com/problems/top-k-frequent-elements/) | [Soln](https://github.com/Rach1507/DSA/blob/main/Neetcode-2023/Arrays%26Hashing/topKFreq.java) | Aug 5/6 | (Array/TreeMap/Hashmap)Create freq map , Sort acc to values using treemap , slice k elemetns return |
-| 2sum | | | |
-| 3sum | | | |
-| Inorder traversal | | | |
-| 2sumsorted | | | |
-| 2Dsearch | | | |
+arrays
 
-|  Topic  | Description | Ref Link(s) |   Link   | Last updated |
-| :-----: | :---------: | :---------: | :------: | :----------: |
-|   PQ    |             |  [link]()   | [read]() |    Aug 6     |
-| HashMap |  [link]()   |  [read]()   |          |
-|  Trees  |             |             |          |
-|         |             |             |          |
-|         |             |             |          |
+use Hashmap , use set
+| Problem | brute force | (bottle neck) | idea | pattern | Link |
+| :----------------: | :---------: | :-----------------: | :----------------------------------------------------------------------------------------------------: | :-----: | ---- |
+| Contains duplicate | | remember what u saw | so use hashmap | | |
+| Contains duplicate | | involves duplicates | so use set - compare set length and arr length | | |
+| 2 sum | | two numbers add up to target | so use hashmap - what we need for target- curr is in hmap | | |
+
+Prefix sum -
+
+|    Problem    |              brute force               |      (bottle neck)      |            idea             | link |
+| :-----------: | :------------------------------------: | :---------------------: | :-------------------------: | :--: |
+| Valid anagram | convert to arr, sort , compare (nlogn) | have char arr , ++ , -- | use arr - to remember chars |      |
+
+String
+
+|    Problem    |              brute force               |      (bottle neck)      |            idea             | link |
+| :-----------: | :------------------------------------: | :---------------------: | :-------------------------: | :--: |
+| Valid anagram | convert to arr, sort , compare (nlogn) | have char arr , ++ , -- | use arr - to remember chars |      |
+
+Trees - https://www.interviewcake.com/concept/java/tree - https://www.youtube.com/watch?v=s2Yyk3qdy3o&ab_channel=Insidecode
+
+| Problem | brute force | (bottle neck) | idea | link |
+| :-----: | :---------: | :-----------: | :--: | :--: |
+
+| max depth
