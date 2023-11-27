@@ -1,5 +1,44 @@
 public class prodOfArrExceptSelf {
+
+    // 2 passes
+    // 1 2 3 4
+    // 1 1 2 6
+    // 24 12 8 6
+
     public int[] productExceptSelf(int[] nums) {
+        int ans[] = new int[nums.length];
+
+        ans[0] = 1;
+
+        for (int i = 1; i < nums.length; i++) {
+            ans[i] = ans[i - 1] * nums[i - 1];
+        }
+
+        int currPostfix = 1;
+
+        for (int i = nums.length - 1; i >= 0; i--) {
+            ans[i] = ans[i] * currPostfix;
+            currPostfix *= nums[i];
+        }
+
+        return ans;
+    }
+
+    public int[] productExceptSelfNeetcode(int[] nums) {
+        int[] arr = new int[nums.length];
+        int right = 1, left = 1;
+        for (int i = 0; i < nums.length; i++) {
+            arr[i] = left;
+            left *= nums[i];
+        }
+        for (int i = nums.length - 1; i >= 0; i--) {
+            arr[i] *= right;
+            right *= nums[i];
+        }
+        return arr;
+    }
+
+    public int[] productExceptSelfWith2Arrays(int[] nums) {
 
         int ans[] = new int[nums.length];
         int productOfAlltoLeft[] = new int[nums.length];
