@@ -1,5 +1,12 @@
 arrays
 
+Dynamic arrays : 
+
+| Problem | brute force | clue/bottleneck for improvement | idea | moreOptimal | pattern | Link |
+| :----------------: | :---------: | :-----------------: | :----------------------------------------------------------------------------------------------------: | :-----: | :-----: | ---- |
+| concatenate arr | create another arr  , 2 pointer, copy i, i+n  | | | neetcode - suggested - concate 3-4 times , | | |
+
+
 use Hashmap , use set
 | Problem | brute force | clue/bottleneck for improvement | idea | moreOptimal | pattern | Link |
 | :----------------: | :---------: | :-----------------: | :----------------------------------------------------------------------------------------------------: | :-----: | :-----: | ---- |
@@ -33,3 +40,24 @@ pattern - https://www.youtube.com/watch?v=s2Yyk3qdy3o&ab_channel=Insidecode
 
 tree if needed resources - https://www.youtube.com/watch?v=W8xT5SkuV3w&list=PL-Jc9J83PIiHYxUk8dSu2_G7MR1PaGXN4&index=3&ab_channel=Pepcoding
 https://www.youtube.com/watch?v=fAAZixBzIAI&t=951s&ab_channel=freeCodeCamp.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+remember what u saw - 
+for strings - arr[] of chars 
+for arrays -store in hashmap 
+
+
