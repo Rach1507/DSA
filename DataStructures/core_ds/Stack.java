@@ -48,6 +48,7 @@
 
 
 import java.util.EmptyStackException;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
@@ -90,6 +91,19 @@ public class Stack<T> implements Iterable<T>{
         return 0;
         // return list.lastIndexOf(elem);
       }
+
+
+    @Override
+    public Iterator<T> iterator() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'iterator'");
+    }
+
+
+    public void add(int int1) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'add'");
+    }
 
       
       

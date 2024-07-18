@@ -13,6 +13,7 @@ use Hashmap , use set
 | Contains duplicate | | remember what u saw | so use hashmap | |HM | |
 | Contains duplicate | | involves duplicates | so use set - compare set length and arr length | |SET | |
 | 2 sum | 2 loops | two numbers add up to target | so use hashmap - what we need for target- curr is in hmap | | HM | |
+|Ransom Note | for every letter in ransom , check magazine | remember what u saw | so use hashmap | still a lot of ops , use arr of character - its just a count | | |
 
 Prefix sum -
 

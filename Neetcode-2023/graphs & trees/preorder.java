@@ -1,6 +1,24 @@
 import java.util.*;
 
 
+
+//internal node class 
+class Node<T> {
+    T data;
+    public Node left;
+    public Node right;
+   
+
+    private Node (T data , Node <T> prev ,Node <T> next){
+        this.data=data;
+        this.left=left;
+        this.right=right;
+    }
+
+
+
+}
+
 public class preorder {
     
     static ArrayList<Integer> preorderTrav(Node root)
@@ -14,7 +32,7 @@ public class preorder {
 
     static void recursivePreOrder ( Node node ,ArrayList<Integer> preorderList ){
         if(node==null)return;
-        preorderList.add(node.data);
+        preorderList.add((Integer) node.data);
          recursivePreOrder(node.left , preorderList);
           recursivePreOrder(node.right , preorderList);
     }

@@ -1,4 +1,4 @@
-package core_ds;
+
 public class WgtedQuickUnioPC 
 // """Weigthed quick union with path compression"""
 {

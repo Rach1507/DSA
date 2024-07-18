@@ -1,6 +1,23 @@
 import java.util.*;
 
 
+
+class Node<T> {
+    T data;
+    public Node left;
+    public Node right;
+   
+
+    private Node (T data , Node <T> prev ,Node <T> next){
+        this.data=data;
+        this.left=left;
+        this.right=right;
+    }
+
+
+
+}
+
 public class postorder {
     ArrayList<Integer> postOrder(Node root)
     {
@@ -16,6 +33,7 @@ public class postorder {
 
         recursivePostOrder(node.left , postorderList);
         recursivePostOrder(node.right , postorderList);
-        postorderList.add(node.data);
+        postorderList.add((Integer) node.data);
+
     }
 }
