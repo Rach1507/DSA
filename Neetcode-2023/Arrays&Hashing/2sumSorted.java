@@ -33,7 +33,6 @@ class twoSumSorted {
 
 
         //  2 pointers 
-    
 
         int leftPointer = 0 ;
         int rightPointer = numbers.length-1;

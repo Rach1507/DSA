@@ -1,3 +1,12 @@
+if uve already committed using other acc -do this first 
+
+git reset <previous label or sha1>
+then set these 
+
 git config user.name "Rach1507"                             
-git config user.email "rachitha715@gmail.com"               
+git config user.email "rachitha715@gmail.com"  
+
+git add .
+
 git commit -m "sept 13" 
+git push 

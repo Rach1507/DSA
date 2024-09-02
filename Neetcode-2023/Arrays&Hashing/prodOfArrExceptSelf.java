@@ -38,7 +38,7 @@ public class prodOfArrExceptSelf {
         return arr;
     }
 
-    public int[] productExceptSelfWith2Arrays(int[] nums) {
+    public int[] productExceptSelfWith3ArraysPrefixSumConcept(int[] nums) {
 
         int ans[] = new int[nums.length];
         int productOfAlltoLeft[] = new int[nums.length];
@@ -70,5 +70,21 @@ public class prodOfArrExceptSelf {
         }
 
         return ans;
+    }
+
+    public int[] productExceptSelfPrefixSumConcept2Arrays(int[] nums) {
+    
+        int leftProduct[] = new int[nums.length];
+        leftProduct[0] = 1;
+        for(int n = 1 ; n < nums.length ;n++) leftProduct[n] = leftProduct[n-1] * nums[n-1];
+
+        int rightProduct[] = new int[nums.length];
+        rightProduct[nums.length-1] = 1;
+        for(int n = nums.length-2  ; n >=0 ;n--) rightProduct[n] = rightProduct[n+1] * nums[n+1];
+
+        for(int n = 0 ; n < nums.length ;n++) nums[n] = leftProduct[n] * rightProduct[n];
+
+        return nums;
+
     }
 }
