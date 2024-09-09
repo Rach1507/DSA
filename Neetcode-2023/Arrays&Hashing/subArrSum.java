@@ -48,11 +48,8 @@ class subArrSumK {
         // have a prefix sum
         // Complexity Analysis
 
-        // Time complexity : O(n
-        // 2
-        // ). Considering every possible subarray takes O(n
-        // 2
-        // ) time. Finding out the sum of any subarray takes O(1) time after the initial
+        // Time complexity : O(n2). Considering every possible subarray takes O(n2 ) time. 
+        // Finding out the sum of any subarray takes O(1) time after the initial
         // processing of O(n) for creating the cumulative sum array.
 
         // Space complexity : O(n). Cumulative sum array sum of size n+1 is used
