@@ -1,4 +1,7 @@
-// import java.util.Map;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.PriorityQueue;
 
 // class Solution {
 
@@ -183,3 +186,68 @@
 // // return map.get(num1) > map.get(num2) ? num1 : num2;
 // // }
 // // }
+
+
+
+class Solution {
+
+    class Node {
+        int key;
+        int count;
+
+        public Node(int key, int count) {
+            this.key = key;
+            this.count = count;
+        }
+    }
+
+    public int[] topKFrequent(int[] nums, int k) {
+        
+        /*
+        // maintain hash with count ( somehow in order of most freq occurences )
+        // how - linkedList 
+        // iterate k times , remove and add to 
+
+        // can i use - stack - 
+        - PQ - with custom comparator , 
+        TreeMap - 
+        2 hmap 
+        1 hmap , 1 treeMap 
+        */
+
+        PriorityQueue<Node> queue = new PriorityQueue<>(new Comparator<Node>() {
+            @Override
+            public int compare(Node n1, Node n2) {
+                return Integer.compare(n2.count, n1.count);
+            }
+        });
+
+        HashMap<Integer , Integer> map = new HashMap<>();
+        
+
+        for(int num : nums){
+            if(map.containsKey(num)) {
+                map.put(num, map.get(num)+1);
+            }else{
+                map.put(num, 1);
+            }
+        }
+
+        for(Map.Entry<Integer,Integer> mapEntry: map.entrySet()){
+            queue.add(new Node(mapEntry.getKey(), mapEntry.getValue()));
+        }
+
+        int kFreq[] = new int[k];
+
+        // It provides O(log(n)) time for add and poll methods . 
+        for(int i=0;i<k;i++){
+            kFreq[i]=queue.poll().key;
+        }
+            
+        return kFreq;
+        }
+
+    
+}
+
+// 1-3 2-2 3-1
