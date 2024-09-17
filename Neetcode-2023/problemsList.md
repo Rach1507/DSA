@@ -43,7 +43,7 @@ tree if needed resources - https://www.youtube.com/watch?v=W8xT5SkuV3w&list=PL-J
 https://www.youtube.com/watch?v=fAAZixBzIAI&t=951s&ab_channel=freeCodeCamp.org
 
 
-
+Sliding window : 
 
 
 
@@ -60,5 +60,7 @@ https://www.youtube.com/watch?v=fAAZixBzIAI&t=951s&ab_channel=freeCodeCamp.org
 remember what u saw - 
 for strings - arr[] of chars 
 for arrays -store in hashmap 
+
+size k - try - sliding window of fixed size
 
 

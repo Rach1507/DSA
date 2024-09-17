@@ -1,6 +1,32 @@
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 class Solution {
+
+    // pattern is - i need to know the elements inside the window , accesible at const time 
+    // any where it says - of size k - think once about sliding window 
+    public boolean containsNearbyDuplicateOptimalWindow(int[] nums, int k) {
+
+
+        Set<Integer> window = new HashSet<>();
+            int left = 0;
+            for (int right = 0; right < nums.length; right++) {
+    
+                if (window.size() > k) {
+                    window.remove(nums[left]);
+                    left++;
+                }
+    
+                if (window.contains(nums[right])) {
+                    return true;
+                }
+    
+                window.add(nums[right]);
+            }
+    
+            return false;
+        }
 
     public boolean containsNearbyDuplicate(int[] nums, int k) {
 
