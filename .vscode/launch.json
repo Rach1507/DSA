@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "groupAnagram",
+            "request": "launch",
+            "mainClass": "groupAnagram",
+            "projectName": "DSA_3985b437"
+        },
+        {
+            "type": "java",
             "name": "Launch revLine",
             "request": "launch",
             "mainClass": "revLine",
