@@ -189,7 +189,7 @@ import java.util.PriorityQueue;
 
 
 
-class Solution {
+class topKFrequent {
 
     class Node {
         int key;
@@ -201,7 +201,7 @@ class Solution {
         }
     }
 
-    public int[] topKFrequent(int[] nums, int k) {
+    public int[] topKFrequen(int[] nums, int k) {
         
         /*
         // maintain hash with count ( somehow in order of most freq occurences )

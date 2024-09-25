@@ -1,6 +1,12 @@
 public class subArrAvg {
 
-// if uve computed window of size k , at every iteration just move the left , add the l+k-1 , reduce the computation
+// if uve computed window of size k-1 
+// at every iteration add the l+k-1 ( right most )
+// check the threshold 
+// then move the left  ( becomes size k-1 ) - loop again 
+// reduce the computation / storing of right ,left 2 variables 
+
+
         public int numOfSubarrays(int[] arr, int k, int threshold) {
             int res = 0, currSum = 0;
     

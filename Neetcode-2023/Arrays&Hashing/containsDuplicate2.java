@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-class Solution {
+class containsNearbyDuplicate2 {
 
     // pattern is - i need to know the elements inside the window , accesible at const time 
     // any where it says - of size k - think once about sliding window 
