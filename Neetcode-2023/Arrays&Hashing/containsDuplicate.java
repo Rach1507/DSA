@@ -35,3 +35,10 @@ class containsDuplicate {
         return false;
     }
 }
+
+/*
+ * using javascript : 
+ * [...new Set[arr]];
+ * filter((num,index) => arr.indexOf(num) === index)
+ * reduce (acc , val) => if(!acc.includes(val) acc.push(val) return acc )
+ */
