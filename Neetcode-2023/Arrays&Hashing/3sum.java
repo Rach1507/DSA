@@ -1,34 +1,83 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
 class Solution {
-    public List<List<Integer>> threeSum(int[] nums) {
+
+    // https://leetcode.com/problems/3sum/solutions/5055810/video-two-pointer-solution/
+
+    public List<List<Integer>> threeSumOptimal(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+
 
         Arrays.sort(nums);
-        LinkedList<List<Integer>> sol = new LinkedList<List<Integer>>();
 
-        for (int i = 0; i < nums.length - 2; i++) {
-            if (i == 0 || (i > 0 && nums[i] != nums[i - 1])) {
-                int target = 0 - nums[i];
-                int leftPointer = i + 1;
-                int rightPointer = numbers.length-1;
 
-                while(leftPointer < rightPointer){
-                    if(numbers[leftPointer] + numbers[rightPointer] == target){
-                        ArrayList<Integer> pair = new ArrayList<>();
-                        pair.add(nums[i]);
-                        pair.add(nums[left]);
-                        pair.add(nums[right]);
-                        sol.add(miniSol);
-                    }else if(numbers[leftPointer] + numbers[rightPointer] > target)
-                        rightPointer--;
-                    else
-                        leftPointer++;
+
+        for (int i = 0; i < nums.length; i++) {
+
+            // if we are not on second loop , 
+            // to avoid duplicates - move pointer until we dont have same starting number 
+
+            if (i > 0 && nums[i] == nums[i-1]) {
+                continue;
+            }
+            
+            int j = i + 1;
+            int k = nums.length - 1;
+
+            while (j < k) {
+                int total = nums[i] + nums[j] + nums[k];
+
+                if (total > 0) {
+                    k--;
+                } else if (total < 0) {
+                    j++;
+                } else {
+                    res.add(Arrays.asList(nums[i], nums[j], nums[k]));
+                    j++;
+
+                    while (nums[j] == nums[j-1] && j < k) {
+                        j++;
+                    }
                 }
-
             }
         }
-
-        return sol;
+        return res;        
     }
 }
+    
+//     public List<List<Integer>> threeSum(int[] nums) {
+
+//         Arrays.sort(nums);
+//         LinkedList<List<Integer>> sol = new LinkedList<List<Integer>>();
+
+//         for (int i = 0; i < nums.length - 2; i++) {
+//             if (i == 0 || (i > 0 && nums[i] != nums[i - 1])) {
+//                 int target = 0 - nums[i];
+//                 int leftPointer = i + 1;
+//                 int rightPointer = nums.length-1;
+
+//                 while(leftPointer < rightPointer){
+//                     if(nums[leftPointer] + nums[rightPointer] == target){
+//                         ArrayList<Integer> pair = new ArrayList<>();
+//                         pair.add(nums[i]);
+//                         pair.add(nums[leftPointer]);
+//                         pair.add(nums[right]);
+//                         sol.add(miniSol);
+//                     }else if(numbers[leftPointer] + numbers[rightPointer] > target)
+//                         rightPointer--;
+//                     else
+//                         leftPointer++;
+//                 }
+
+//             }
+//         }
+
+//         return sol;
+//     }
+// }
 
 
         // List<List<Integer>> finalResult = new ArrayList<>();

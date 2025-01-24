@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "sum",
+            "request": "launch",
+            "mainClass": "sum",
+            "projectName": "DSA_3985b437"
+        },
+        {
+            "type": "java",
+            "name": "kokoBanana",
+            "request": "launch",
+            "mainClass": "kokoBanana",
+            "projectName": "DSA_3985b437"
+        },
+        {
+            "type": "java",
             "name": "groupAnagram",
             "request": "launch",
             "mainClass": "groupAnagram",
